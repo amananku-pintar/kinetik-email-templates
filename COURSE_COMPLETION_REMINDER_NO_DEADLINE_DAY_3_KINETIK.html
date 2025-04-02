@@ -64,17 +64,17 @@
     }
 
     @media only screen and (max-width: 479px) {
-      .logo-img {
-        height: 100%;
-        width: 92px;
-      }
-
       table.mj-full-width-mobile {
         width: 100% !important;
       }
 
       td.mj-full-width-mobile {
         width: auto !important;
+      }
+
+      .logo-img {
+        height: 100%;
+        width: 92px;
       }
     }
   </style>
@@ -91,6 +91,7 @@
       .heading div {
         font-size: 20px !important;
       }
+
     }
   </style>
 
@@ -135,7 +136,7 @@
                     <tr>
                       <td style="vertical-align: top; padding: 0px">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
-                          <tbody>
+                          <tbody style="background: #1A4370">
                             <tr>
                               <td align="left" style="
                                     font-size: 0px;
@@ -148,10 +149,10 @@
                                     ">
                                   <tbody>
                                     <tr>
-                                      <td style="width: 165px">
-                                        <img src="https://dbvqtvbhl8akk.cloudfront.net/pintar_v2_images/BiruLogo.png"
+                                      <td style="width: 165px; height: 48px">
+                                        <img src="https://dbvqtvbhl8akk.cloudfront.net/pintar_v2_images/Kinetic-Logo-Email.png"
                                           class="logo-img"
-                                          style="margin-left: 17px; margin-top: 13px; margin-bottom: 13px;">
+                                          style="padding-left: 17px;">
                                       </td>
                                     </tr>
                                   </tbody>
@@ -234,7 +235,7 @@
                                       font-weight: 700;
                                       color: #333;
                                     ">
-                                  Halo {{user_name}},
+                                  Hi {{user_name}},
                                 </div>
                               </td>
                             </tr>
@@ -264,18 +265,7 @@
                                       color: #494f5a;
                                       font-weight: 400;
                                     ">
-                                  Kamu belum menyelesaikan kursus {{course_name}}. Ayo kejar yang tersisa!
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="
-                                    font-size: 0px;
-                                    padding: 0px;
-                                    word-break: break-word;
-                                  ">
-                                <div style="height: 20px; line-height: 20px">
-                                  &#8202;
+                                  <div style="margin-bottom: 1em;">You haven't finished the {{course_name}} course. Let's catch up on the rest!</div>
                                 </div>
                               </td>
                             </tr>
@@ -302,7 +292,7 @@
                                           " valign="middle">
                                         <a href="{{redirect_url}}" style="
                                               display: inline-block;
-                                              background: #1D94C3;
+                                              background: #1A4370;
                                               color: #ffffff;
                                               font-family: Ubuntu, Helvetica,
                                                 Arial, sans-serif;
@@ -317,12 +307,70 @@
                                               mso-padding-alt: 0px;
                                               border-radius: 30px;
                                             " target="_blank">
-                                          <strong>Cek Kursus</strong>
+                                          <strong>Check Now</strong>
                                         </a>
                                       </td>
                                     </tr>
                                   </tbody>
                                 </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="
+                                    font-size: 0px;
+                                    padding: 0px;
+                                    word-break: break-word;
+                                  ">
+                                <div style="height: 20px; line-height: 20px">
+                                  &#8202;
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" class="text-style" style="
+                                    font-size: 0px;
+                                    padding: 0px;
+                                    word-break: break-word;
+                                  ">
+                                <div style="
+                                      font-family: Ubuntu, Helvetica, Arial,
+                                        sans-serif;
+                                      font-size: 14px;
+                                      line-height: 150%;
+                                      text-align: left;
+                                      color: #535353;
+                                    ">
+                                  Good luck on your learning journey.
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" class="text-style" style="
+                                    font-size: 0px;
+                                    padding: 0px;
+                                    word-break: break-word;
+                                  ">
+                                <div style="
+                                      font-family: Ubuntu, Helvetica, Arial,
+                                        sans-serif;
+                                      font-size: 14px;
+                                      line-height: 150%;
+                                      text-align: left;
+                                      color: #535353;
+                                    ">
+                                  If you have any questions or run into any issues, feel free to <a href="{{redirect_url}}" style="
+                                              display: inline-block;
+                                              color: #03629E;
+                                              font-family: Ubuntu, Helvetica,
+                                                Arial, sans-serif;
+                                              text-align: center;
+                                              font-weight: normal;
+                                              line-height: 120%;
+                                              margin: 0;
+                                              text-decoration: underline;
+                                              text-transform: none;
+                                            " target="_blank">contact us</a>. We’re here to help!
+                                </div>
                               </td>
                             </tr>
                             <tr>
@@ -368,7 +416,7 @@
                                       text-align: left;
                                       color: #535353;
                                     ">
-                                  BIRU
+                                  KINETIK Sweef EP Hub Team
                                 </div>
                               </td>
                             </tr>
@@ -381,21 +429,23 @@
               </div>
             </td>
           </tr>
+
         </tbody>
+
       </table>
       <div class="footer" style="
-        font-size: 13px;
-        line-height: 18px;
-        text-align: left;
-        background-color: #1D94C3;
-        display: flex;
-        align-items: center;
-        color: #f2f1f0;
-        padding: 11px 25px;
-        font-family: Ubuntu, Helvetica, Arial, sans-serif;
-        ">
+      font-size: 13px;
+      line-height: 18px;
+      text-align: left;
+      background-color: #1A4370;
+      display: flex;
+      align-items: center;
+      color: #f2f1f0;
+      padding: 11px 25px;
+      font-family: Ubuntu, Helvetica, Arial, sans-serif;
+      ">
         <div style="width: 100%">
-          <b> © {{year}} PT Bisa Ruang Nuswantara
+          <b> © {{year}} PT Pintar Pemenang Asia. All rights reserved.
           </b>
         </div>
       </div>
@@ -403,6 +453,7 @@
     </td>
     </tr>
     </tbody>
+
     </table>
   </div>
   <!--[if mso | IE]>
